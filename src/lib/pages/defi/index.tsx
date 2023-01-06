@@ -53,11 +53,11 @@ const Defi = ({
   return (
     <>
       <NextSeo
-        title={`Osmosis | Defi`}
+        title={`Optimism | Defi`}
         description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
         openGraph={{
           url: `https://${names.SITE_URL}/`,
-          title: `Osmosis  | Defi`,
+          title: `Optimism  | Defi`,
           description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
           images: [
             {
@@ -73,7 +73,7 @@ const Defi = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Near DEFI">
+        <HeaderSection title="Optimism DEFI">
           {`
 
 The following topics are shown on this page:
