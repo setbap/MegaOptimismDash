@@ -45,11 +45,11 @@ const NFT = ({
   return (
     <>
       <NextSeo
-        title={`Optimis | Supply`}
+        title={`Optimism | Supply`}
         description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
         openGraph={{
           url: `https://${names.SITE_URL}/`,
-          title: `Optimis  | Supply`,
+          title: `Optimism  | Supply`,
           description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
           images: [
             {
@@ -65,9 +65,9 @@ const NFT = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Optimis NFT">
+        <HeaderSection title="Optimism NFT">
           {`
-Optimis is an open-source blockchain that is well-suited to hosting and trading Non-Fungible Tokens (NFTs). NFTs are digital tokens that represent digital assets, such as artwork, collectibles, or even real-world items like tickets or concert passes. The Optimis protocol enables developers to create, transfer, and trade NFTs in a secure and trustless fashion. It also offers scalability, low transaction fees, and fast transaction times. Optimis has become a popular platform for the creation, trading, and collection of digital assets and NFTs, with many high-profile projects launching on the Optimis blockchain.
+Optimism is an open-source blockchain that is well-suited to hosting and trading Non-Fungible Tokens (NFTs). NFTs are digital tokens that represent digital assets, such as artwork, collectibles, or even real-world items like tickets or concert passes. The Optimism protocol enables developers to create, transfer, and trade NFTs in a secure and trustless fashion. It also offers scalability, low transaction fees, and fast transaction times. Optimism has become a popular platform for the creation, trading, and collection of digital assets and NFTs, with many high-profile projects launching on the Optimism blockchain.
 `}
         </HeaderSection>
         <Box pt={"4"}></Box>

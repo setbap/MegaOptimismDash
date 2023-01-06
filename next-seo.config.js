@@ -2,24 +2,24 @@ import names from "lib/utility/names";
 
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "MegaOptimisDash",
-  titleTemplate: "%s | Business Intelligence Dashboard Optimis",
-  defaultTitle: "MegaOptimisDash | Business Intelligence Dashboard Optimis ",
+  title: "MegaOptimismDash",
+  titleTemplate: "%s | Business Intelligence Dashboard Optimism",
+  defaultTitle: "MegaOptimismDash | Business Intelligence Dashboard Optimism ",
   description:
-    "Best Business Intelligence Dashboard Optimis by MetricsDao, Flipside Crypto and Setbap ",
-  canonical: "https://MegaOptimisDash.vercel.app/",
+    "Best Business Intelligence Dashboard Optimism by MetricsDao, Flipside Crypto and Setbap ",
+  canonical: "https://MegaOptimismDash.vercel.app/",
   openGraph: {
-    url: "https://MegaOptimisDash.vercel.app/",
-    title: "MegaOptimisDash",
+    url: "https://MegaOptimismDash.vercel.app/",
+    title: "MegaOptimismDash",
     description:
-      "Best Business Intelligence Dashboard Optimis by MetricsDao, Flipside Crypto and Setbap ",
+      "Best Business Intelligence Dashboard Optimism by MetricsDao, Flipside Crypto and Setbap ",
     images: [
       {
         url: `https://${names.SITE_URL}/og.png`,
         alt: `${names.APP_NAME} by Flipside Crypto and Setbap`,
       },
     ],
-    site_name: "MegaOptimisDash",
+    site_name: "MegaOptimismDash",
   },
   twitter: {
     handle: "@flipsidecrypto",

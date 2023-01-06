@@ -30,13 +30,13 @@ const About = () => {
             width={75}
             height={75}
             src="/og_big.png"
-            alt="Optimis og Image big size"
+            alt="Optimism og Image big size"
           />
         </Box>
         <Box position={"absolute"} bottom="8px" width={"100%"} px="8px">
           <HeaderSection title={"elSina"}>
             {`
-  __[Page Source | elSina(SETBAP)](https://github.com/setbap/MegaOptimisDash)__
+  __[Page Source | elSina(SETBAP)](https://github.com/setbap/MegaOptimismDash)__
 `}
           </HeaderSection>
         </Box>
@@ -70,7 +70,7 @@ __Github__
       </SimpleGrid>
       <HeaderSection title={"About"}>
         {`
-This dashboard is made with love by members of the Optimis community, in partnership with MetricsDao and Flipside Crypto. We hope it serves as a valuable window into high-level metrics that display the vitality and growth of the Optimis Blockchain.
+This dashboard is made with love by members of the Optimism community, in partnership with MetricsDao and Flipside Crypto. We hope it serves as a valuable window into high-level metrics that display the vitality and growth of the Optimism Blockchain.
 
 `}
       </HeaderSection>
@@ -78,7 +78,7 @@ This dashboard is made with love by members of the Optimis community, in partner
       <HeaderSection title={"Methodology"}>
         {`
 
--   Data is drawn from a combination of Flipside Crypto’s Optimis tables and existing APIs.
+-   Data is drawn from a combination of Flipside Crypto’s Optimism tables and existing APIs.
     
 -   For charts where data comes from Flipside’s data, a link to the underlying query is provided in the Settings gear wheel at the top right of each visualization.
     

@@ -44,11 +44,11 @@ const Governance = ({
   return (
     <>
       <NextSeo
-        title={`Optimis | Transactions`}
+        title={`Optimism | Transactions`}
         description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
         openGraph={{
           url: `https://${names.SITE_URL}/`,
-          title: `Optimis  | Transactions`,
+          title: `Optimism  | Transactions`,
           description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
           images: [
             {
@@ -64,7 +64,7 @@ const Governance = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Optimis Transaction">
+        <HeaderSection title="Optimism Transaction">
           {`
 The following topics are shown on this page:
 * __Transactions__ : Number of transactions made on a blockchain.
