@@ -91,3 +91,5 @@ export interface DeFi8WeeklyTop10SwappingPairsVolume {
     "Volume": number
     "Rank": number
 }
+
+export interface DeFi9DEXsComparison { }
