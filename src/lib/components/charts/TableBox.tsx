@@ -50,7 +50,7 @@ function TableBox<T>({
       _hover={{ boxShadow: "var(--chakra-shadows-lg)", borderColor: "#444" }}
       borderRadius={"2xl"}
       mx="auto"
-      overflowX='hidden'
+      overflowX="hidden"
       colSpan={spanItem}
       display="flex"
       flex={2}
@@ -75,8 +75,7 @@ function TableBox<T>({
         flexDir={"column"}
         alignItems="center"
         id={title}
-        overflowX='hidden'
-
+        overflowX="hidden"
       >
         <ChartHeader
           chartMenu={

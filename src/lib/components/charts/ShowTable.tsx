@@ -104,7 +104,12 @@ export const ShowTable = React.memo(function TableComponent<T>({
   });
   return (
     <>
-      <TableContainer ml={'0'} width={{ "base": 'calc(100vw - 80px)', md: 'calc(100vw - 132px)' }} pt={"2"} pb="4" >
+      <TableContainer
+        ml={"0"}
+        width={{ base: "calc(100vw - 80px)", md: "calc(100vw - 132px)" }}
+        pt={"2"}
+        pb="4"
+      >
         <ChTable variant="simple">
           <Thead
             borderTopRadius={"sm"}
@@ -126,9 +131,9 @@ export const ShowTable = React.memo(function TableComponent<T>({
                       {header.isPlaceholder
                         ? null
                         : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
-                        )}
+                            header.column.columnDef.header,
+                            header.getContext()
+                          )}
                       <small>
                         {" "}
                         {!!header.column.getFilterValue() &&
@@ -177,9 +182,9 @@ export const ShowTable = React.memo(function TableComponent<T>({
                     {header.isPlaceholder
                       ? null
                       : flexRender(
-                        header.column.columnDef.footer,
-                        header.getContext()
-                      )}
+                          header.column.columnDef.footer,
+                          header.getContext()
+                        )}
                   </Th>
                 ))}
               </Tr>
@@ -190,8 +195,8 @@ export const ShowTable = React.memo(function TableComponent<T>({
 
       <HStack
         data-html2canvas-ignore
-        flexDir={{ 'base': 'column', md: 'row' }}
-        gap={'4'}
+        flexDir={{ base: "column", md: "row" }}
+        gap={"4"}
         mt="4"
         justifyContent={"start"}
         spacing={4}
@@ -395,10 +400,11 @@ function Filter({
                 old?.[1],
               ])
             }
-            placeholder={`Min ${column.getFacetedMinMaxValues()?.[0]
-              ? `(${column.getFacetedMinMaxValues()?.[0]})`
-              : ""
-              }`}
+            placeholder={`Min ${
+              column.getFacetedMinMaxValues()?.[0]
+                ? `(${column.getFacetedMinMaxValues()?.[0]})`
+                : ""
+            }`}
           />
           <DebouncedInput
             label={`${column.id as string} (max)`}
@@ -412,10 +418,11 @@ function Filter({
                 value,
               ])
             }
-            placeholder={`Max ${column.getFacetedMinMaxValues()?.[1]
-              ? `(${column.getFacetedMinMaxValues()?.[1]})`
-              : ""
-              }`}
+            placeholder={`Max ${
+              column.getFacetedMinMaxValues()?.[1]
+                ? `(${column.getFacetedMinMaxValues()?.[1]})`
+                : ""
+            }`}
           />
         </Stack>
       </Box>
