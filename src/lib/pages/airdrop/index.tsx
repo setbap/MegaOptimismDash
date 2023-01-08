@@ -66,7 +66,7 @@ const NFT = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Optimism NFT"></HeaderSection>
+        <HeaderSection title="Optimism Airdrop"></HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
           {`
