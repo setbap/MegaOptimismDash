@@ -39,7 +39,7 @@ export async function getStaticProps() {
     getNFTCollectionsTransactions(),
     getNFTCollectionsVolume(),
     getNFTCollectionsUniqueBuyers(),
-    getNFT24HChange()
+    getNFT24HChange(),
   ]);
 
   return {
@@ -57,15 +57,9 @@ export async function getStaticProps() {
   };
 }
 
-export interface NFTProps {
-  nFT24HChange: ReturnDataType<NFT24HChange>
-  nFTTotalInfo: ReturnDataType<NFTTotalInfo>;
-  nFTTotalDailyInfo: ReturnDataType<NFTTotalDailyInfo>;
-  nFTSelling: ReturnDataType<NFTSelling[]>;
-  nFTMarketplaceComparison: ReturnDataType<NFTMarketplaceComparison[]>;
-  nFTCollectionsTransactions: ReturnDataType<NFTCollectionsTransactions[]>;
-  nFTCollectionsVolume: ReturnDataType<NFTCollectionsVolume[]>;
-  nFTCollectionsUniqueBuyers: ReturnDataType<NFTCollectionsUniqueBuyers[]>;
-}
+export type NFTProps = Pick<
+  Awaited<ReturnType<typeof getStaticProps>>,
+  "props"
+>["props"];
 
 export default NFT;

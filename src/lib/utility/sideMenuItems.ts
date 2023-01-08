@@ -1,6 +1,6 @@
 import { BsFileEarmarkImage } from "react-icons/bs";
 import { BiTransferAlt } from "react-icons/bi";
-import { RiHistoryFill } from "react-icons/ri";
+import { RiGovernmentLine, RiHistoryFill } from "react-icons/ri";
 import { AiOutlineSwap } from "react-icons/ai";
 import { GiNightSky } from "react-icons/gi";
 
@@ -9,6 +9,7 @@ export default [
   { name: "NFT", path: "/nft", icon: BsFileEarmarkImage },
   { name: "Airdrop", path: "/airdrop", icon: GiNightSky },
   { name: "Defi", path: "/defi", icon: AiOutlineSwap },
+  { name: "Governance", path: "/governance", icon: RiGovernmentLine },
   { name: "TX history ", path: "/tx-history", icon: RiHistoryFill },
 
 ];
