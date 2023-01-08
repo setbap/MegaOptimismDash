@@ -6,6 +6,7 @@ import {
   FlexProps,
   Box,
   Text,
+  Wrap,
 } from "@chakra-ui/react";
 import names from "lib/utility/names";
 import Image from "next/image";
@@ -73,7 +74,7 @@ const DesktopLinkNav = () => {
         display={"flex"}
         flex="row"
       >
-        <Box experimental_spaceX={"1"}>
+        <Wrap experimental_spaceX={"1"}>
           {sideMenuItems.map((link, index) => (
             <Button
               size={"sm"}
@@ -93,7 +94,7 @@ const DesktopLinkNav = () => {
               {link.name}
             </Button>
           ))}
-        </Box>
+        </Wrap>
       </Box>
     </Box>
   );

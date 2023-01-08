@@ -1,8 +1,8 @@
-import { BsFileEarmarkImage } from "react-icons/bs";
-import { BiTransferAlt } from "react-icons/bi";
-import { RiGovernmentLine, RiHistoryFill } from "react-icons/ri";
-import { AiOutlineSwap } from "react-icons/ai";
+import { BsCodeSquare, BsFileEarmarkImage } from "react-icons/bs";
 import { GiMeepleCircle, GiNightSky } from "react-icons/gi";
+import { RiGovernmentLine, RiHistoryFill } from "react-icons/ri";
+import { BiTransferAlt } from "react-icons/bi";
+import { AiOutlineSwap } from "react-icons/ai";
 
 export default [
   { name: "Transactions", path: "/", icon: BiTransferAlt },
@@ -11,6 +11,7 @@ export default [
   { name: "Defi", path: "/defi", icon: AiOutlineSwap },
   { name: "Governance", path: "/governance", icon: RiGovernmentLine },
   { name: "Supply", path: "/supply", icon: GiMeepleCircle },
+  { name: "Development", path: "/development", icon: BsCodeSquare },
   { name: "TX history ", path: "/tx-history", icon: RiHistoryFill },
 
 ];

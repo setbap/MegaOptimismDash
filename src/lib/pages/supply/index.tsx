@@ -52,7 +52,9 @@ const colDef: ColumnDef<SupplyOPHolders1TopOPHolders>[] = [
 const Supply = ({
   supplyOPHolders1TopOPHolders,
   supplyOPHolders2DistributionOfOPHolders,
+  supplyInfo,
 }: SupplyProps): JSX.Element => {
+  const supplyInfoName = supplyInfo.title.split(",");
   return (
     <>
       <NextSeo
@@ -83,19 +85,37 @@ const Supply = ({
 according section defined in above, i prepare some of static about these topics. all data came from Flipside data and with click of title of each item can see query these data in Flipside Crypto
 `}
         </HeaderSection>
-        {/* <SimpleGrid
+        <SimpleGrid
           my={"6"}
           columns={{ base: 1, md: 2, lg: 2, "2xl": 3 }}
           spacing={{ base: 5, lg: 8 }}
         >
           <StatsCard
-            stat={nFTTotalDailyInfo.data["Daily Sales Volume (in USD)"]}
-            title={nFTTotalDailyInfoName[0]}
+            stat={supplyInfo.data.totalSupply}
+            title={supplyInfoName[0]}
             status="inc"
+            isExternalLink
             hasArrowIcon={false}
-            link={nFTTotalDailyInfo.key}
+            link={supplyInfo.key}
           />
-        </SimpleGrid> */}
+          <StatsCard
+            stat={supplyInfo.data.circulatingSupply}
+            title={supplyInfoName[1]}
+            status="inc"
+            isExternalLink
+            hasArrowIcon={false}
+            link={supplyInfo.key}
+          />
+          <StatsCard
+            stat={supplyInfo.data.circulationSupplyRatio}
+            title={supplyInfoName[2]}
+            status="inc"
+            unit="%"
+            isExternalLink
+            hasArrowIcon={false}
+            link={supplyInfo.key}
+          />
+        </SimpleGrid>
 
         <SimpleGrid
           position={"relative"}

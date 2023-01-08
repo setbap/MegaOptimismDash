@@ -7,3 +7,9 @@ export interface SupplyOPHolders1TopOPHolders {
     "WALLET": number
     "BALANCE": number
 }
+
+export interface SupplySingleNumber {
+    totalSupply: number;
+    circulatingSupply: number;
+    circulationSupplyRatio: number;
+}

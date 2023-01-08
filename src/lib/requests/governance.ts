@@ -54,7 +54,7 @@ export const getGovernance2DelegationBreakdownByTypeWeekly: () => Promise<
     return {
         data: {
             delegatorsCount: delegatorsCount.sort((a, b) =>
-                a['Name'] > b['Name'] ? -1 : 1
+                a['Name'] > b['Name'] ? 1 : -1
             ),
             types,
         },
