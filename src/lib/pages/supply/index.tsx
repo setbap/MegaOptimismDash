@@ -1,14 +1,10 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
-import ChartBox from "lib/components/charts/LineChart";
 import { StatsCard } from "lib/components/charts/StateCard";
 import names from "lib/utility/names";
 import { NextSeo } from "next-seo";
 import { SupplyProps } from "pages/supply";
 import DonutChart from "lib/components/charts/DonutChart";
-import BarGraph from "lib/components/charts/BarGraph";
 import HeaderSection from "lib/components/basic/HeaderSection";
-import LineChartWithBar from "lib/components/charts/LineChartWithBar";
-import StackedAreaChart from "lib/components/charts/StackedAreaGraph";
 import { SupplyOPHolders1TopOPHolders } from "lib/types/types/supply";
 import { ColumnDef } from "@tanstack/react-table";
 import millify from "millify";
