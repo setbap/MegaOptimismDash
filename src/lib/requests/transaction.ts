@@ -40,7 +40,7 @@ export const getTransactionsFee = () =>
 export const getTransactionsBlockAge = () =>
   getSimpleArrayData<TransactionsBlockAge, TransactionsBlockAge>(
     "bc13cb44-f1d4-4988-89ff-f3e3c2987178",
-    "Weekly number of transactions per block,Weekly block time,Weekly block time,Number of transactions per block (TPB)",
+    "Weekly number of transactions per block,Block time,Weekly block time,Number of transactions per block (TPB)",
     "Day"
   );
 

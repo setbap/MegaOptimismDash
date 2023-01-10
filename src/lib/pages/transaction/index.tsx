@@ -335,7 +335,7 @@ according section defined in above, i prepare some of static about these topics.
           <LineChartWithBar
             data={transactionsFee.data}
             queryLink={transactionsFee.key}
-            title={transactionsFeeNames[0]}
+            title={transactionsFeeNames[1]}
             baseSpan={3}
             customColor={colors[0]}
             barColor={colors[2]}
