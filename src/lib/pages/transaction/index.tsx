@@ -359,18 +359,7 @@ according section defined in above, i prepare some of static about these topics.
           />
 
           <HeaderSection title="Block Time" />
-          <LineChartWithBar
-            data={transactionsBlockAge.data}
-            queryLink={transactionsBlockAge.key}
-            title={transactionsBlockAgeNames[0]}
-            baseSpan={3}
-            customColor={colors[0]}
-            barColor={colors[2]}
-            xAxisDataKey="Day"
-            barDataKey={"Block tx"}
-            additionalLineKey={["MA7 block tx"]}
-            lineDataKey="AVG Block tx"
-          />
+
           <LineChartWithBar
             data={transactionsBlockAge.data}
             queryLink={transactionsBlockAge.key}
