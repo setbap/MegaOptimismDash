@@ -1,5 +1,5 @@
 import { ReturnDataType } from "lib/types/base";
-import { DeFi1TotalSingleNumber, DeFi2DailySingleNumber, DeFi3TodayChanges, DeFi4SwappingOverTime, DeFi5TopSwappingFromAssetsTransactions, DeFi5TopSwappingFromAssetsUniqueSwappers, DeFi5TopSwappingFromAssetsVolume, DeFi6TopSwappingToAssetsTransactions, DeFi6TopSwappingToAssetsUniqueSwappers, DeFi6TopSwappingToAssetsVolume, DeFi7TopSwappingPairsTransactions, DeFi7TopSwappingPairsUniqueSwappers, DeFi7TopSwappingPairsVolume, DeFi8WeeklyTop10SwappingPairsTransactions, DeFi8WeeklyTop10SwappingPairsUniqueSwappers, DeFi8WeeklyTop10SwappingPairsVolume, DeFi9DEXsComparison } from "lib/types/types/defi";
+import { DeFi10DEXsComparisonDailyAverage, DeFi1TotalSingleNumber, DeFi2DailySingleNumber, DeFi3TodayChanges, DeFi4SwappingOverTime, DeFi5TopSwappingFromAssetsTransactions, DeFi5TopSwappingFromAssetsUniqueSwappers, DeFi5TopSwappingFromAssetsVolume, DeFi6TopSwappingToAssetsTransactions, DeFi6TopSwappingToAssetsUniqueSwappers, DeFi6TopSwappingToAssetsVolume, DeFi7TopSwappingPairsTransactions, DeFi7TopSwappingPairsUniqueSwappers, DeFi7TopSwappingPairsVolume, DeFi8WeeklyTop10SwappingPairsTransactions, DeFi8WeeklyTop10SwappingPairsUniqueSwappers, DeFi8WeeklyTop10SwappingPairsVolume, DeFi9DEXsComparison } from "lib/types/types/defi";
 
 import {
   getSimpleArrayData,
@@ -252,4 +252,13 @@ export const getDeFi9DEXsComparison = () =>
   >(
     "68a54938-b020-4a5c-b730-dcdb8b8d6054",
     "DEXs share in number of transactions,DEXs share in volume of transactions,DEXs share in unique user of transactions"
+  );
+
+export const getDeFi10DEXsComparisonDailyAverage = () =>
+  getSimpleArrayData<
+    DeFi10DEXsComparisonDailyAverage,
+    DeFi10DEXsComparisonDailyAverage
+  >(
+    "d656fbf8-8484-4417-99ba-bec18093671c",
+    "Daily average number of transaction on each DEX,Daily average volume(in USD) on each DEX,Daily average unique swapper on each DEX,Daily average swap size on each DEX"
   );

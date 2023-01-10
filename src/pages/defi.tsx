@@ -1,5 +1,6 @@
 import DeFi from "lib/pages/defi";
 import {
+  getDeFi10DEXsComparisonDailyAverage,
   getDeFi1TotalSingleNumber,
   getDeFi2DailySingleNumber,
   getDeFi3TodayChanges,
@@ -38,6 +39,7 @@ export async function getStaticProps() {
     deFi8WeeklyTop10SwappingPairsUniqueSwappers,
     deFi8WeeklyTop10SwappingPairsVolume,
     deFi9DEXsComparison,
+    deFi10DEXsComparisonDailyAverage,
   ] = await Promise.all([
     getDeFi1TotalSingleNumber(),
     getDeFi2DailySingleNumber(),
@@ -56,6 +58,7 @@ export async function getStaticProps() {
     getDeFi8WeeklyTop10SwappingPairsUniqueSwappers(),
     getDeFi8WeeklyTop10SwappingPairsVolume(),
     getDeFi9DEXsComparison(),
+    getDeFi10DEXsComparisonDailyAverage(),
   ]);
 
   return {
@@ -77,6 +80,7 @@ export async function getStaticProps() {
       deFi8WeeklyTop10SwappingPairsUniqueSwappers,
       deFi8WeeklyTop10SwappingPairsVolume,
       deFi9DEXsComparison,
+      deFi10DEXsComparisonDailyAverage,
     },
     revalidate: 10 * 60,
   };

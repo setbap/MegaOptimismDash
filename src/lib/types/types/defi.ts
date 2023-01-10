@@ -93,3 +93,10 @@ export interface DeFi8WeeklyTop10SwappingPairsVolume {
 }
 
 export interface DeFi9DEXsComparison { }
+export interface DeFi10DEXsComparisonDailyAverage {
+    "Platform": string,
+    "AVG Swap Count": number,
+    "AVG Unique Swapper": number,
+    "AVG Volume": number,
+    "AVG Swap Size": number
+}

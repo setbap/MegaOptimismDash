@@ -42,13 +42,15 @@ const Defi = ({
   deFi8WeeklyTop10SwappingPairsUniqueSwappers,
   deFi8WeeklyTop10SwappingPairsVolume,
   deFi9DEXsComparison,
+  deFi10DEXsComparisonDailyAverage,
 }: DefiProps): JSX.Element => {
   const deFi1TotalSingleNumberNames = deFi1TotalSingleNumber.title.split(",");
   const deFi2DailySingleNumberNames = deFi2DailySingleNumber.title.split(",");
   const deFi3TodayChangesNames = deFi3TodayChanges.title.split(",");
   const deFi4SwappingOverTimeNames = deFi4SwappingOverTime.title.split(",");
-
   const deFi9DEXsComparisonNames = deFi9DEXsComparison.title.split(",");
+  const deFi10DEXsComparisonDailyAverageNames =
+    deFi10DEXsComparisonDailyAverage.title.split(",");
 
   return (
     <>
@@ -428,6 +430,32 @@ according section defined in above, i prepare some of static about these topics.
               title={deFi9DEXsComparisonNames[index]}
               nameKey="Platform"
               dataKey={item}
+            />
+          ))}
+
+          {[
+            "AVG Swap Count",
+            "AVG Volume",
+            "AVG Unique Swapper",
+            "AVG Swap Size",
+          ].map((item, index) => (
+            <BarGraph
+              values={deFi10DEXsComparisonDailyAverage.data}
+              queryLink={deFi10DEXsComparisonDailyAverage.key}
+              modalInfo=""
+              title={deFi10DEXsComparisonDailyAverageNames[index]}
+              baseSpan={1}
+              dataKey="Platform"
+              isNotDate
+              oyLabel=""
+              oxLabel="Platform"
+              hideLegend
+              labels={[
+                {
+                  key: item,
+                  color: colors[index % colors.length],
+                },
+              ]}
             />
           ))}
         </SimpleGrid>
