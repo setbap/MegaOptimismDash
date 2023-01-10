@@ -14,20 +14,20 @@ export const getGovernanceSingleNumber = () =>
 export const getGovernance1DelegationsOvertime = () =>
     getSimpleArrayData<Governance1DelegationsOvertime, Governance1DelegationsOvertime>(
         "4d353431-ba90-42ae-ae7b-a1e0799d03ba",
-        "1. Number of delegation over time",
+        "Number of delegation over time",
         "Day"
     );
 
 export const getGovernance2DelegationBreakdownByType = () =>
     getSimpleArrayData<Governance2DelegationBreakdownByType, Governance2DelegationBreakdownByType>(
         "48646cc5-0a76-4588-bf1c-41535a3dbdbe",
-        "2. Number of delegation breakdown by type",
+        "Number of delegation breakdown by type",
     );
 
 export const _getGovernance2DelegationBreakdownByTypeWeekly = () =>
     getSimpleArrayData<Governance2DelegationBreakdownByTypeWeekly, Governance2DelegationBreakdownByTypeWeekly>(
         "d659defa-1c32-4dbd-ab03-d98a6b543c78",
-        "1. Delegation Over time breakdown by type",
+        "Delegation Over time breakdown by type",
     );
 
 export const getGovernance2DelegationBreakdownByTypeWeekly: () => Promise<
