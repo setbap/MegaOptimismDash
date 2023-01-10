@@ -1,4 +1,16 @@
-import { Box, Progress, Select, SimpleGrid, useToast } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Progress,
+  Select,
+  SimpleGrid,
+  useColorModeValue,
+  useToast,
+} from "@chakra-ui/react";
 import ChartBox from "lib/components/charts/LineChart";
 import { StatsCard } from "lib/components/charts/StateCard";
 import names from "lib/utility/names";
@@ -12,6 +24,7 @@ import StackedAreaChart from "lib/components/charts/StackedAreaGraph";
 import { useQuery } from "react-query";
 import { CollectionDataApi } from "pages/api/collection/[collectionName]";
 import { useState } from "react";
+import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 const colors = [
   "#ff5722",
@@ -102,6 +115,7 @@ const NFT = ({
 
     query.refetch({ queryKey: name });
   };
+  const bgCard = useColorModeValue("white", "#191919");
   return (
     <>
       <NextSeo
@@ -144,7 +158,44 @@ const NFT = ({
           bottom={["42px", "64px"]}
           right={["12px", "32px"]}
         >
-          <Select
+          <Menu isLazy>
+            <MenuButton
+              px={5}
+              py={3}
+              bg={names.BLOCKCHAIN_HEADER_GRADIENT}
+              _expanded={{ bg: names.BLOCKCHAIN_HEADER_GRADIENT }}
+              _hover={{ bg: names.BLOCKCHAIN_HEADER_GRADIENT }}
+              color="white"
+              fontSize={["lg", "xl"]}
+              transition="all 0.2s"
+              borderRadius="lg"
+              as={Button}
+              rightIcon={<BiChevronUp />}
+            >
+              {pageData.collectionName}
+            </MenuButton>
+
+            <MenuList bg={bgCard}>
+              {/* MenuItems are not rendered unless Menu is open */}
+
+              {collectionNames.data.map((name, index) => (
+                <MenuItem
+                  bg={bgCard}
+                  onClick={() => submitAddress(name["Project Name"])}
+                  value={name["Project Name"]}
+                  key={index}
+                  color={
+                    name["Project Name"] === pageData.collectionName
+                      ? "red"
+                      : "MenuText"
+                  }
+                >
+                  {name["Project Name"]} ({name["Collection Name"]})
+                </MenuItem>
+              ))}
+            </MenuList>
+          </Menu>
+          {/* <Select
             border={"none"}
             value={pageData.collectionName}
             bg={names.BLOCKCHAIN_HEADER_GRADIENT}
@@ -169,7 +220,7 @@ const NFT = ({
                 </option>
               ))}
             </optgroup>
-          </Select>
+          </Select> */}
         </Box>
         <HeaderSection title="Optimism NFT Collection" />
         <Box pt={"4"}></Box>
