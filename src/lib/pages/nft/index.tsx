@@ -67,8 +67,7 @@ const NFT = ({
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <HeaderSection title="Optimism NFT">
           {`
-Optimism is an open-source blockchain that is well-suited to hosting and trading Non-Fungible Tokens (NFTs). NFTs are digital tokens that represent digital assets, such as artwork, collectibles, or even real-world items like tickets or concert passes. The Optimism protocol enables developers to create, transfer, and trade NFTs in a secure and trustless fashion. It also offers scalability, low transaction fees, and fast transaction times. Optimism has become a popular platform for the creation, trading, and collection of digital assets and NFTs, with many high-profile projects launching on the Optimism blockchain.
-`}
+Optimism is a Layer 2 Ethereum scaling solution that enables fast, cheap, and secure transactions on the Ethereum network. It is also used to support non-fungible token (NFT) transactions, allowing users to create, buy, and sell NFTs with faster transaction times and lower fees than on the Ethereum mainnet. Furthermore, Optimism is interoperable with other Layer 2 solutions, allowing users to move their NFTs across different blockchains with ease.`}
         </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
@@ -82,13 +81,12 @@ according section defined in above, i prepare some of static about these topics.
           spacing={{ base: 5, lg: 8 }}
         >
           <StatsCard
-            stat={nFTTotalDailyInfo.data["Daily Sales Volume (in USD)"]}
-            title={nFTTotalDailyInfoName[0]}
+            stat={nFTTotalInfo.data["Total Sales Count"]}
+            title={nFTTotalInfoName[3]}
             status="inc"
             hasArrowIcon={false}
-            link={nFTTotalDailyInfo.key}
+            link={nFTTotalInfo.key}
           />
-
           <StatsCard
             stat={nFTTotalInfo.data["Total Sales Volume (in USD)"]}
             title={nFTTotalInfoName[0]}
@@ -96,7 +94,20 @@ according section defined in above, i prepare some of static about these topics.
             hasArrowIcon={false}
             link={nFTTotalInfo.key}
           />
-
+          <StatsCard
+            stat={nFTTotalInfo.data["Total Unique Buyers"]}
+            title={nFTTotalInfoName[1]}
+            status="inc"
+            hasArrowIcon={false}
+            link={nFTTotalInfo.key}
+          />
+          <StatsCard
+            stat={nFTTotalInfo.data["Total Unique Sellers"]}
+            title={nFTTotalInfoName[2]}
+            status="inc"
+            hasArrowIcon={false}
+            link={nFTTotalInfo.key}
+          />
           <StatsCard
             stat={nFTTotalDailyInfo.data["Daily Sales Count"]}
             title={nFTTotalDailyInfoName[2]}
@@ -106,11 +117,11 @@ according section defined in above, i prepare some of static about these topics.
           />
 
           <StatsCard
-            stat={nFTTotalInfo.data["Total Sales Count"]}
-            title={nFTTotalInfoName[3]}
+            stat={nFTTotalDailyInfo.data["Daily Sales Volume (in USD)"]}
+            title={nFTTotalDailyInfoName[0]}
             status="inc"
             hasArrowIcon={false}
-            link={nFTTotalInfo.key}
+            link={nFTTotalDailyInfo.key}
           />
 
           <StatsCard
@@ -122,27 +133,11 @@ according section defined in above, i prepare some of static about these topics.
           />
 
           <StatsCard
-            stat={nFTTotalInfo.data["Total Unique Buyers"]}
-            title={nFTTotalInfoName[1]}
-            status="inc"
-            hasArrowIcon={false}
-            link={nFTTotalInfo.key}
-          />
-
-          <StatsCard
             stat={nFTTotalDailyInfo.data["Daily Unique Sellers"]}
             title={nFTTotalDailyInfoName[4]}
             status="inc"
             hasArrowIcon={false}
             link={nFTTotalDailyInfo.key}
-          />
-
-          <StatsCard
-            stat={nFTTotalInfo.data["Total Unique Sellers"]}
-            title={nFTTotalInfoName[2]}
-            status="inc"
-            hasArrowIcon={false}
-            link={nFTTotalInfo.key}
           />
 
           <StatsCard
@@ -302,12 +297,8 @@ according section defined in above, i prepare some of static about these topics.
             nameKey="Marketplace"
             dataKey="Sales Volume"
           />
-          <HeaderSection title="NFT collections" />
-          {/* 
-          nFTCollectionsTransactions
-nFTCollectionsVolume
-nFTCollectionsUniqueBuyers
- */}
+          <HeaderSection title="Top NFT collections" />
+
           <BarGraph
             values={nFTCollectionsTransactions.data}
             queryLink={nFTCollectionsTransactions.key}

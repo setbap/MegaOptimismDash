@@ -35,7 +35,7 @@ export const getNFTTotalDailyInfo = () =>
 export const getNFTSelling = () =>
   getSimpleArrayData<NFTSelling, NFTSelling>(
     "7c4b108c-c36d-47e9-ad14-d5735eef032f",
-    "Weekly volume (in USD) of NFTs sold,Cumulative volume (in USD) of NFTs sold,Cumulative number of NFTs sold,Weekly average NFT price (in USD),Weekly number of NFT buyers Vsellers,Weekly number of NFTs sold",
+    "Weekly volume (in USD) of NFTs sold,Cumulative volume (in USD) of NFTs sold,Cumulative number of NFTs sold,Weekly average NFT price (in USD),Weekly number of NFT buyers Vs sellers,Weekly number of NFTs sold",
     "Day"
   );
 // ✅ 
@@ -48,19 +48,19 @@ export const getNFTMarketplaceComparison = () =>
 export const getNFTCollectionsTransactions = () =>
   getSimpleArrayData<NFTCollectionsTransactions, NFTCollectionsTransactions>(
     "bc664203-5d4e-4f5a-a433-17315f1c7b22",
-    "Top 10 NFT collections based on sold count"
+    "Top NFT collections based on sold count"
   );
 
 // ✅ 
 export const getNFTCollectionsVolume = () =>
   getSimpleArrayData<NFTCollectionsVolume, NFTCollectionsVolume>(
     "02df7077-180b-4746-9810-818d2fc1a7ea",
-    "Top 10 NFT collections based on volume"
+    "Top NFT collections based on volume"
   );
 
 // ✅ 
 export const getNFTCollectionsUniqueBuyers = () =>
   getSimpleArrayData<NFTCollectionsUniqueBuyers, NFTCollectionsUniqueBuyers>(
     "46922976-2a0a-4d2c-8a15-0ce71ad9124e",
-    "Top 10 NFT collections based on unique buyers"
+    "Top NFT collections based on unique buyers"
   );
