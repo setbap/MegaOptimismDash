@@ -6,7 +6,6 @@ import {
   MenuItem,
   MenuList,
   Progress,
-  Select,
   SimpleGrid,
   useColorModeValue,
   useToast,
@@ -24,7 +23,7 @@ import StackedAreaChart from "lib/components/charts/StackedAreaGraph";
 import { useQuery } from "react-query";
 import { CollectionDataApi } from "pages/api/collection/[collectionName]";
 import { useState } from "react";
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { BiChevronUp } from "react-icons/bi";
 
 const colors = [
   "#ff5722",
@@ -195,34 +194,12 @@ const NFT = ({
               ))}
             </MenuList>
           </Menu>
-          {/* <Select
-            border={"none"}
-            value={pageData.collectionName}
-            bg={names.BLOCKCHAIN_HEADER_GRADIENT}
-            onChange={(e) => submitAddress(e.target.value)}
-            size={["md", "lg"]}
-            borderRadius={"12px"}
-            color="#fff"
-            fontWeight={"bold"}
-          >
-            <optgroup
-              style={{ backgroundColor: "#191919", padding: "8px" }}
-              label="select collection"
-            >
-              {collectionNames.data.map((name, index) => (
-                <option
-                  color="white"
-                  style={{ backgroundColor: "#191919" }}
-                  value={name["Project Name"]}
-                  key={index}
-                >
-                  {name["Collection Name"]}
-                </option>
-              ))}
-            </optgroup>
-          </Select> */}
         </Box>
-        <HeaderSection title="Optimism NFT Collection" />
+        <HeaderSection title="Optimism NFT Collection">
+          {`
+The purpose of this section is focusing on certain NFT collection on this network. Some of most popular collections listed here and you can choose one of them to see all metrics related to it.
+`}
+        </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
           {`

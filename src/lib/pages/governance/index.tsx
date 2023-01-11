@@ -55,7 +55,26 @@ const Governance = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Optimism Governance"></HeaderSection>
+        <HeaderSection title="Optimism Governance">
+          {`
+
+Optimism governance is a collaborative effort between the Optimism Foundation and the Optimism Collective. The Optimism Collective is bicameral, dividing governance matters equally between the Token House and the Citizens’ House.
+
+#### The Token House
+
+The Token House’s mission is to govern project incentives, protocol upgrades, and treasury funds. It was launched with
+
+Airdrop #1 in June 2022. Notably, 5.4% of the total OP supply (~232 million OP) has been allocated to the Governance Fund to be distributed to the Optimism Ecosystem.
+
+#### The Citizens’ House
+
+The Citizens’ House has yet to be launched but will initially comprise top contributors in the Optimism ecosystem. The Optimism Foundation will select the initial Citizens and award Citizenship via Soulbound NFTs. Members of the Citizens’ House will be responsible for retroactively distributing protocol-generated revenue to public goods serving the Optimism Ecosystem.
+
+#### Delegates
+
+A delegate is someone you select to make governance decisions on your behalf. You still retain full ownership of your tokens, but your delegate will wield the voting power associated with those tokens. You can  delegate to anyone, including yourself.
+`}
+        </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
           {`
