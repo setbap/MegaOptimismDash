@@ -66,7 +66,49 @@ const NFT = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Optimism Airdrop"></HeaderSection>
+        <HeaderSection title="Optimism Airdrop">
+          {`
+**_Allocation: 19%_**
+
+  
+
+The Optimism Foundation will distribute a portion of the OP allocation to members of the Optimism and Ethereum communities in multiple waves.
+
+  
+
+The first user airdrop will distribute **5%** of the OP token supply. This airdrop has six sets of criteria. Two for Optimism users that target early adopters and active project users, and four for L1 Ethereum, which target active contribution, positive-sum behaviors, and active participation.
+
+- **Optimism Users:** This group selects for addresses that have used Optimism, including both early adopters and newer users, but narrows down to a group that has used Optimism multiple times.
+
+- **Repeat Optimism Users:** This tier selects for the most active Optimism users, who repeatedly come back to use applications in the Optimism ecosystem.
+
+- **DAO Voters:** The Foudation believes that active and engaged governance is crucial to scaling decentralized systems. Addresses who match this criterion have actively chosen to actively contribute by participating in governance.
+
+- **Multi-Sig Signers:** Multi-sig signers are entrusted with larger pools of capital or control over key protocol functions. They are often the present (and future) DAO leaders and builders.
+
+- **Gitcoin Donors (on L1):** Gitcoin donors have chosen to behave in positive-sum ways by funding public goods. These addresses may also align with Optimism’s goal to build sustainable funding source for public goods through  [retroactive funding (RetroPGF](https://medium.com/ethereum-optimism/retropgf-experiment-1-1-million-dollars-for-public-goods-f7e455cbdca)).
+
+- **Users Priced Out of Ethereum:** Active users of dapps on Ethereum are critical to ecosystem growth. Many of these addresses have started bridging to other chains due to high fees, and we want to help retain them in the Ethereum ecosystem while rewarding their curiosity and exploration. Optimism’s airdrop is also calibrated to reward loyalty to Ethereum, so users who have abandoned Ethereum entirely would not receive an airdrop.
+
+- **Overlap Bonus:** Early Optimism users who also match multiple Ethereum criteria may be most likely to become important participants in the Optimism ecosystem, so these addresses were rewarded with an extra overlap bonus.
+
+  
+
+An allocation of 14% of the OP token supply will be held in reserve for future user airdrops. As a result of the game-able nature of airdrops, the Optimism Foundation will be responsible for determining airdrop metrics as fairly as possible. The intent behind airdrops is to distribute them to addresses that positively impact the Optimism community.
+
+  
+
+Now I describe each section:
+
+- **Airdrop Over time:** In this section, you can see the total token claimed and total unique claimers per week. The cumulative charts present too.
+
+- **Airdrop distribution:** There are two important charts here. one of them shows most of the claimers claimed how many tokens. Another one is what is the number of claimers that claimed a certain amount of tokens.
+
+- **Top destinations after airdrop claiming:** One of the interesting things is to trace the destination of the claimers. Here, we show the first destination of those who claimed airdrops.
+
+- **Airdrop Delegations:** In this section, you can see the total delegation per week. Furthermore, you can see which projects or people have been delegated to them the most.
+`}
+        </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
           {`

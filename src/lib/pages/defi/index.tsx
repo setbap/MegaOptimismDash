@@ -78,30 +78,23 @@ const Defi = ({
         <HeaderSection title="Optimism DEFI">
           {`
 
+There are currently a number of decentralized finance (DeFi) protocols operating on the Optimism network, including Uniswap, Velodrome, Rubicon, Clipper, Beethoven, Sushiswap and etc. Each of these protocols provides different services, such as lending, borrowing, trading, and more. These protocols can be used to access the full range of DeFi services offered on Optimism, allowing users to easily access the DeFi ecosystem. Here we focus on trading and swapping activity.
+
+
 The following topics are shown on this page:
 
-* **Swapping Over time:** In this section, you could see some simple metrics including number of swapping transactions and swappers, volume of swapping transactions, and also average swapping size over time.
+- **Swapping Over time:**  In this section, you could see some simple metrics including number of swapping transactions and swappers, volume of swapping transactions, and also average swapping size over time.
 
-  
+- **Top Swapping From Assets:**  This section shows the most popular swapping from assets in terms of number of transactions, number of users and volume of transactions.
 
-* **Top Swapping From Assets:** This section shows the most popular swapping from assets in terms of number of transactions, number of users and volume of transactions.
+- **Top Swapping To Assets:**  This section shows the most popular swapping to assets in terms of number of transactions, number of users and volume of transactions.
 
-  
+- **Top Swapping Pairs:**  This section shows the most popular swapping pairs in terms of number of transactions, number of users and volume of transactions.
 
-* **Top Swapping To Assets:** This section shows the most popular swapping to assets in terms of number of transactions, number of users and volume of transactions.
+- **Weekly Top 10 Swapping Pairs:**  Tried to find weekly top 10 swapping pairs in terms of number of transactions, number of users and volume of transactions.
 
-  
-
-* **Top Swapping Pairs:** This section shows the most popular swapping pairs in terms of number of transactions, number of users and volume of transactions.
-
-  
-
-* **Weekly Top 10 Swapping Pairs:** Tried to find weekly top 10 swapping pairs in terms of number of transactions, number of users and volume of transactions.
-
-  
-
-* **DEXs comparison:** Comparing different swapping platforms is shown in this section. The comparison is in terms of number of transactions, number of users and volume of transactions.
-          `}
+- **DEXs comparison:**  Comparing different swapping platforms is shown in this section. The comparison is in terms of number of transactions, number of users and volume of transactions. Also, we can see the daily average of different metrics for each DEX during the past 90 days.
+`}
         </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">
