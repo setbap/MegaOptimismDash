@@ -13,6 +13,6 @@ export default [
   { name: "Supply", path: "/supply", icon: GiMeepleCircle },
   { name: "Development", path: "/development", icon: BsCodeSquare },
   { name: "Collection", path: "/collection", icon: BiCollection },
-  { name: "TX history ", path: "/tx-history", icon: RiHistoryFill },
+  { name: "History ", path: "/tx-history", icon: RiHistoryFill },
 
 ];
