@@ -72,11 +72,11 @@ const NFT = ({
       certainCollectionMarketplacesComparison.data,
     certainCollectionMarketplacesComparisonDailyAverage:
       certainCollectionMarketplacesComparisonDailyAverage.data,
-    collectionName: "optipunk",
+    collectionName: "mirror",
   });
 
   const [nextSelectedCollection, setNextSelectedCollection] =
-    useState("optipunk");
+    useState("mirror");
 
   const query = useQuery(
     nextSelectedCollection,
